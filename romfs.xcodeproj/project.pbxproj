@@ -1,0 +1,298 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C5E5CD1184F6980001B4031 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C5E5CCF184F6980001B4031 /* InfoPlist.strings */; };
+		2C5E5CD3184F6980001B4031 /* romfs_vfsops.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C5E5CD2184F6980001B4031 /* romfs_vfsops.c */; };
+		2CB0AF971859C10000F9FA8A /* romfs_vnops.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CB0AF961859C10000F9FA8A /* romfs_vnops.c */; };
+		2CB0AF9A1859C45000F9FA8A /* romfs_init.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CB0AF991859C45000F9FA8A /* romfs_init.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2C5E5CC7184F6980001B4031 /* romfs.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = romfs.kext; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C5E5CCB184F6980001B4031 /* Kernel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kernel.framework; path = System/Library/Frameworks/Kernel.framework; sourceTree = SDKROOT; };
+		2C5E5CCE184F6980001B4031 /* romfs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "romfs-Info.plist"; sourceTree = "<group>"; };
+		2C5E5CD0184F6980001B4031 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2C5E5CD2184F6980001B4031 /* romfs_vfsops.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = romfs_vfsops.c; sourceTree = "<group>"; };
+		2C5E5CD4184F6980001B4031 /* romfs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "romfs-Prefix.pch"; sourceTree = "<group>"; };
+		2CB0AF961859C10000F9FA8A /* romfs_vnops.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = romfs_vnops.c; sourceTree = "<group>"; };
+		2CB0AF991859C45000F9FA8A /* romfs_init.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = romfs_init.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C5E5CC2184F6980001B4031 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C5E5CBA184F6980001B4031 = {
+			isa = PBXGroup;
+			children = (
+				2C5E5CCC184F6980001B4031 /* romfs */,
+				2C5E5CC9184F6980001B4031 /* Frameworks */,
+				2C5E5CC8184F6980001B4031 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2C5E5CC8184F6980001B4031 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C5E5CC7184F6980001B4031 /* romfs.kext */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C5E5CC9184F6980001B4031 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C5E5CCA184F6980001B4031 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2C5E5CCA184F6980001B4031 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C5E5CCB184F6980001B4031 /* Kernel.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		2C5E5CCC184F6980001B4031 /* romfs */ = {
+			isa = PBXGroup;
+			children = (
+				2CB0AF991859C45000F9FA8A /* romfs_init.c */,
+				2C5E5CD2184F6980001B4031 /* romfs_vfsops.c */,
+				2CB0AF961859C10000F9FA8A /* romfs_vnops.c */,
+				2C5E5CCD184F6980001B4031 /* Supporting Files */,
+			);
+			path = romfs;
+			sourceTree = "<group>";
+		};
+		2C5E5CCD184F6980001B4031 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2C5E5CCE184F6980001B4031 /* romfs-Info.plist */,
+				2C5E5CCF184F6980001B4031 /* InfoPlist.strings */,
+				2C5E5CD4184F6980001B4031 /* romfs-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2C5E5CC3184F6980001B4031 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2C5E5CC6184F6980001B4031 /* romfs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C5E5CD7184F6980001B4031 /* Build configuration list for PBXNativeTarget "romfs" */;
+			buildPhases = (
+				2C5E5CC1184F6980001B4031 /* Sources */,
+				2C5E5CC2184F6980001B4031 /* Frameworks */,
+				2C5E5CC3184F6980001B4031 /* Headers */,
+				2C5E5CC4184F6980001B4031 /* Resources */,
+				2C5E5CC5184F6980001B4031 /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = romfs;
+			productName = romfs;
+			productReference = 2C5E5CC7184F6980001B4031 /* romfs.kext */;
+			productType = "com.apple.product-type.kernel-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2C5E5CBC184F6980001B4031 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 2C5E5CBF184F6980001B4031 /* Build configuration list for PBXProject "romfs" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2C5E5CBA184F6980001B4031;
+			productRefGroup = 2C5E5CC8184F6980001B4031 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2C5E5CC6184F6980001B4031 /* romfs */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2C5E5CC4184F6980001B4031 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C5E5CD1184F6980001B4031 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		2C5E5CC5184F6980001B4031 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C5E5CC1184F6980001B4031 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C5E5CD3184F6980001B4031 /* romfs_vfsops.c in Sources */,
+				2CB0AF971859C10000F9FA8A /* romfs_vnops.c in Sources */,
+				2CB0AF9A1859C45000F9FA8A /* romfs_init.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2C5E5CCF184F6980001B4031 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C5E5CD0184F6980001B4031 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2C5E5CD5184F6980001B4031 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		2C5E5CD6184F6980001B4031 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		2C5E5CD8184F6980001B4031 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "romfs/romfs-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "romfs/romfs-Info.plist";
+				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions";
+				MODULE_NAME = "net.os-tres.osx.kernel.romfs";
+				MODULE_START = romfs_start;
+				MODULE_STOP = romfs_stop;
+				MODULE_VERSION = 1.0.0d1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Debug;
+		};
+		2C5E5CD9184F6980001B4031 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "romfs/romfs-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "romfs/romfs-Info.plist";
+				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions";
+				MODULE_NAME = "net.os-tres.osx.kernel.romfs";
+				MODULE_START = romfs_start;
+				MODULE_STOP = romfs_stop;
+				MODULE_VERSION = 1.0.0d1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C5E5CBF184F6980001B4031 /* Build configuration list for PBXProject "romfs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C5E5CD5184F6980001B4031 /* Debug */,
+				2C5E5CD6184F6980001B4031 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C5E5CD7184F6980001B4031 /* Build configuration list for PBXNativeTarget "romfs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C5E5CD8184F6980001B4031 /* Debug */,
+				2C5E5CD9184F6980001B4031 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2C5E5CBC184F6980001B4031 /* Project object */;
+}
